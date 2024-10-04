@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-
-    bisection();
+    double root = bisection(1, 2, 0.01);
+    cout << "Root: " << root << endl;
     return 0;
 }
