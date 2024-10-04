@@ -1,7 +1,6 @@
-#ifndef ROOT_FINDING_H
-#define ROOT_FINDING_H
+#ifndef ROOT_FINDING_HPP
+#define ROOT_FINDING_HPP
 
-double bisection();
-
+void bisection();
 
 #endif

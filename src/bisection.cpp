@@ -3,7 +3,6 @@
 
 using namespace std;
 
-double bisection() {
+void bisection() {
     cout << "Bisection method" << endl;
-    return 0;
 }

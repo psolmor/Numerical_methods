@@ -1,8 +1,10 @@
+#include "root_finding.hpp"
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    cout << "Hello, World!" << endl;
+
+    bisection();
     return 0;
 }
