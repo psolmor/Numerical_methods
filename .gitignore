@@ -1,2 +1,6 @@
 .vscode
 main.exe
+bisection.o
+main.o
+newton_method.o
+test_func.o
