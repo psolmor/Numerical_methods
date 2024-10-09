@@ -4,7 +4,9 @@
 using namespace std;
 
 int main() {
-    double root = bisection(1, 2, 0.01);
-    cout << "Root: " << root << endl;
+    double root_bi = bisection(1, 2, 0.01);
+    double root_newton = newton_method(1, 2, 0.01);
+    cout << "Root bisection: " << root_bi << endl;
+    cout << "Root newton: " << root_newton << endl;
     return 0;
 }

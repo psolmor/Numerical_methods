@@ -6,7 +6,7 @@ using namespace std;
 
 //Derivative calculation trough central diferennces
 double derivative(double x,double h=0.0001){
-    return (test_func(x + h) - test_func(x-h)) /(2*h);
+    return (test_func(x + h) - test_func(x-h))/(2*h);
 }
 
 
@@ -23,4 +23,5 @@ double newton_method(double interval_origin, double interval_ending, double tol,
         x2 = x1 - (test_func(x1) / derivative(x1));
         iter++;
     }
+    return x2;
 }
