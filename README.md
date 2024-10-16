@@ -1,9 +1,16 @@
-# Numerical_methods
-Collection of Numerical methods used in physics
+# Numerical Methods
+Collection of numerical methods used in physics. Written in C++.
 
-# Road map
+## Roadmap
+### Root Finding
+- Bisection
+- Newton's Method
+- Secant
+- Brent's Method
+- Ridders' Method
 
--Root finding:  Bisection, Newton's Method, Secant, Brent's method, Ridders' method.
--Numerical Integration
--ODE
--PDE
+### Numerical Integration
+
+### ODE (Ordinary Differential Equations)
+
+### PDE (Partial Differential Equations)
