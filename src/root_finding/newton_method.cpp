@@ -1,4 +1,4 @@
-#include "root_finding.hpp"
+#include "../../include/root_finding.hpp"
 #include <iostream>
 #include <stdexcept>
 #include <cmath>
