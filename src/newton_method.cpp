@@ -1,8 +1,9 @@
 #include "root_finding.hpp"
 #include <iostream>
+#include <stdexcept>
 #include <cmath>
 
-using namespace std;
+
 
 //Derivative calculation trough central diferennces
 double derivative(double x,double h=0.0001){
@@ -22,6 +23,9 @@ double newton_method(double interval_origin, double interval_ending, double tol,
         x1 = x2;
         x2 = x1 - (test_func(x1) / derivative(x1));
         iter++;
+        if (iter==MAX_ITER){
+            throw std::runtime_error("Max. iteration reached for Newton method.");
+        };
     }
     return x2;
 }
