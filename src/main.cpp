@@ -4,9 +4,8 @@
 using namespace std;
 
 int main() {
-    double root_bi = bisection(1, 2);
-    double root_newton = newton_method(1, 2);
-    cout << "Root bisection: " << root_bi << endl;
-    cout << "Root newton: " << root_newton << endl;
+    cout << "Root bisection: " <<  bisection(1, 2) << endl;
+    cout << "Root newton: " << newton_method(1, 2) << endl;
+    cout << "Secant Method: " << secant(3,4) << endl;
     return 0;
 }

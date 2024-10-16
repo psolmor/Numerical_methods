@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -Wall -std=c++11
 
-SOURCES = main.cpp bisection.cpp test_func.cpp newton_method.cpp 
+SOURCES = main.cpp bisection.cpp test_func.cpp newton_method.cpp secant.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 EXECUTABLE = main
 
