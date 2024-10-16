@@ -1,17 +1,17 @@
 CXX = g++
-CXXFLAGS = -Wall -std=c++11
+CXXFLAGS = -Wall -std=c++11 -I../include
 
-SOURCES = main.cpp bisection.cpp test_func.cpp newton_method.cpp secant.cpp
+SOURCES = ../src/main.cpp ../src/root_finding/bisection.cpp ../tests/test_func.cpp ../src/root_finding/newton_method.cpp ../src/root_finding/secant.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 EXECUTABLE = main
 
 all: $(EXECUTABLE)
 
 $(EXECUTABLE): $(OBJECTS)
-	$(CXX) $(OBJECTS) -o $@
+    $(CXX) $(OBJECTS) -o $@
 
 %.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+    $(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJECTS) $(EXECUTABLE)
+    rm -f $(OBJECTS) $(EXECUTABLE)
